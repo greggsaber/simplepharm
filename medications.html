@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PharmaFlow | Medication Selection</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        💊 PharmaFlow
+    </div>
+
+    <div class="subtitle">
+        Prescription Refill Portal
+    </div>
+
+</header>
+
+
+<main>
+
+<div class="card">
+
+
+    <!-- Progress -->
+
+    <div class="progress">
+
+        <div class="step completed">✓</div>
+        <div class="line completed"></div>
+
+        <div class="step completed">✓</div>
+        <div class="line completed"></div>
+
+        <div class="step active">3</div>
+        <div class="line"></div>
+
+        <div class="step">4</div>
+
+    </div>
+
+
+    <h1 id="patientName">
+        Welcome
+    </h1>
+
+
+    <p class="description">
+
+        Please select the medications that you wish to collect today.
+
+        <br><br>
+
+        For each medication, choose whether you would like to request it by
+        <strong>Quantity</strong> or by <strong>Duration</strong>.
+
+    </p>
+
+
+    <br>
+
+
+    <!-- Medication cards generated here -->
+
+    <div id="medicationList"></div>
+
+
+    <br>
+
+
+    <div class="notice">
+
+        <h3>Additional Notes (Optional)</h3>
+
+
+        <textarea
+            id="pharmacistNotes"
+            rows="4"
+            placeholder="Example: Please prepare medication before 3 pm."
+        ></textarea>
+
+
+    </div>
+
+
+</div>
+
+</main>
+
+
+
+<!-- Sticky summary -->
+
+<div class="summaryBar">
+
+
+    <div>
+
+        <strong>Selected Medications:</strong>
+
+        <span id="selectedCount">
+
+            0
+
+        </span>
+
+
+    </div>
+
+
+    <button id="continueButton">
+
+        Review Order →
+
+    </button>
+
+
+</div>
+
+
+
+<script src="js/medications.js"></script>
+
+
+</body>
+
+</html>
